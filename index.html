@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لا ريفييرا — مطعم فاخر</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="logo">لا ريفييرا</div>
+    <ul class="nav-links">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#about">عن المطعم</a></li>
+      <li><a href="#menu">القائمة</a></li>
+      <li><a href="#gallery">معرض الصور</a></li>
+      <li><a href="#reservation">حجز طاولة</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">الرئيسية</a>
+    <a href="#about">عن المطعم</a>
+    <a href="#menu">القائمة</a>
+    <a href="#gallery">معرض الصور</a>
+    <a href="#reservation">حجز طاولة</a>
+    <a href="#contact">تواصل معنا</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-tag">تجربة طعام لا تُنسى</p>
+    <h1>لا ريفييرا</h1>
+    <p class="hero-sub">حيث يلتقي الفن بالنكهة — مطبخ متوسطي راقٍ في قلب المدينة</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn btn-gold">استكشف القائمة</a>
+      <a href="#reservation" class="btn btn-outline">احجز طاولتك</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>اكتشف المزيد</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about reveal">
+  <div class="container about-grid">
+    <div class="about-img-wrap">
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=80" alt="داخل المطعم" />
+      </div>
+      <div class="about-badge">
+        <span class="badge-num">١٥</span>
+        <span class="badge-text">عاماً من التميز</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-tag">قصتنا</p>
+      <h2>شغف يتجاوز الطعام</h2>
+      <p>أسّس الشيف كريم مصطفى مطعم لا ريفييرا عام ٢٠١٠ بحلم بسيط: تقديم المطبخ المتوسطي بروح معاصرة وخامات طازجة من المزارع المحلية.</p>
+      <p>اليوم، يحمل المطعم نجمة ميشلان ويستقبل ضيوفه في أجواء دافئة تجمع بين الفخامة والألفة.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-n">+٢٠٠</span><span>طبق في القائمة</span></div>
+        <div class="stat"><span class="stat-n">٥٠</span><span>طاولة حصرية</span></div>
+        <div class="stat"><span class="stat-n">٩.٨</span><span>تقييم الضيوف</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag">قائمة الطعام</p>
+      <h2>اكتشف نكهاتنا</h2>
+    </div>
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-cat="starters">مقبلات</button>
+      <button class="tab-btn" data-cat="mains">أطباق رئيسية</button>
+      <button class="tab-btn" data-cat="grills">مشويات</button>
+      <button class="tab-btn" data-cat="desserts">حلويات</button>
+      <button class="tab-btn" data-cat="drinks">مشروبات</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery-section reveal">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag">معرض الصور</p>
+      <h2>لحظات من المطعم</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gal-item big"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="" /></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="" /></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="" /></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&q=80" alt="" /></div>
+      <div class="gal-item"><img src="https://images.unsplash.com/photo-1482275548304-a58859dc31b7?w=500&q=80" alt="" /></div>
+      <div class="gal-item big-v"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=500&q=80" alt="" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials reveal">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag">آراء ضيوفنا</p>
+      <h2>ماذا يقولون عنا</h2>
+    </div>
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"تجربة استثنائية في كل التفاصيل. الطعام رائع والخدمة أروع. سأعود بالتأكيد!"</p>
+        <div class="testi-author"><strong>سارة الأحمد</strong> — القاهرة</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"أفضل مطعم جربته في حياتي. الأجواء ساحرة والأطباق فنّ حقيقي على الطبق."</p>
+        <div class="testi-author"><strong>محمد علي</strong> — الإسكندرية</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"احتفلنا بعيد زواجنا هنا وكان مثالياً. شكر خاص للشيف كريم على الاهتمام."</p>
+        <div class="testi-author"><strong>نور وأحمد</strong> — المنصورة</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"القائمة متنوعة وكل طبق له طابعه الخاص. الحلويات لا تُقاوَم!"</p>
+        <div class="testi-author"><strong>رنا مصطفى</strong> — الجيزة</div>
+      </div>
+    </div>
+    <div class="testi-dots" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section id="reservation" class="reservation reveal">
+  <div class="container res-grid">
+    <div class="res-info">
+      <p class="section-tag">الحجوزات</p>
+      <h2>احجز طاولتك الآن</h2>
+      <p>يسعدنا استقبالك في أي وقت من الأسبوع. للحجز الخاص والمناسبات، تواصل معنا مباشرة.</p>
+      <div class="res-details">
+        <div class="res-detail-item"><span class="icon">🕐</span><div><strong>أوقات العمل</strong><p>الإثنين – الجمعة: ١٢ ظهراً – ١١ مساءً<br/>السبت – الأحد: ١١ صباحاً – ١٢ منتصف الليل</p></div></div>
+        <div class="res-detail-item"><span class="icon">📍</span><div><strong>العنوان</strong><p>٥ شارع النيل، وسط البلد، القاهرة</p></div></div>
+        <div class="res-detail-item"><span class="icon">📞</span><div><strong>هاتف</strong><p>010 0000 0000</p></div></div>
+      </div>
+    </div>
+    <div class="res-form-wrap">
+      <form id="reservationForm" class="res-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label>الاسم الكامل</label>
+            <input type="text" name="name" placeholder="أدخل اسمك" required />
+          </div>
+          <div class="form-group">
+            <label>رقم الهاتف</label>
+            <input type="tel" name="phone" placeholder="+20 10 0000 0000" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>التاريخ</label>
+            <input type="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label>الوقت</label>
+            <input type="time" name="time" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>عدد الأشخاص</label>
+          <select name="guests" required>
+            <option value="">اختر العدد</option>
+            <option value="1">١ شخص</option>
+            <option value="2">٢ شخص</option>
+            <option value="3">٣ أشخاص</option>
+            <option value="4">٤ أشخاص</option>
+            <option value="5">٥ أشخاص</option>
+            <option value="6+">٦ أو أكثر</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>طلبات خاصة (اختياري)</label>
+          <textarea name="notes" placeholder="حساسية غذائية، مناسبة، أي تفضيلات..." rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold full-w">تأكيد الحجز</button>
+        <div class="form-success" id="formSuccess">✅ تم استلام حجزك! سنتواصل معك للتأكيد.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact reveal">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag">تواصل معنا</p>
+      <h2>نحن هنا لخدمتك</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card"><span>📧</span><h3>البريد الإلكتروني</h3><p>info@lariviera.com</p></div>
+      <div class="contact-card"><span>📞</span><h3>الهاتف</h3><p>010 0000 0000</p></div>
+      <div class="contact-card"><span>📍</span><h3>الموقع</h3><p>٥ شارع النيل، القاهرة</p></div>
+      <div class="contact-card"><span>🌐</span><h3>تابعنا</h3><p>Instagram · Facebook · TikTok</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="logo">لا ريفييرا</div>
+      <p>حيث يلتقي الفن بالنكهة</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#menu">القائمة</a>
+      <a href="#reservation">حجز</a>
+      <a href="#contact">تواصل</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 لا ريفييرا — جميع الحقوق محفوظة</div>
+</footer>
+
+<!-- CART TOAST -->
+<div class="cart-toast" id="cartToast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script src="index.js"></script>
+</body>
+</html>
